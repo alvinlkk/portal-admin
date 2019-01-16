@@ -1,4 +1,4 @@
-package com.alvinlkk.portal.admin;
+package com.alvinlkk.portal.boot.portal.admin;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
