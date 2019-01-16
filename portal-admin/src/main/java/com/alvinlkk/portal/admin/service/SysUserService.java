@@ -1,6 +1,8 @@
 package com.alvinlkk.portal.admin.service;
 
 import com.alvinlkk.portal.admin.model.SysUser;
+import com.alvinlkk.portal.admin.page.PageRequest;
+import com.alvinlkk.portal.admin.page.PageResult;
 
 import java.util.List;
 
@@ -24,4 +26,8 @@ public interface SysUserService {
      * @return
      */
     List<SysUser> findAll();
+
+
+    PageResult findPage(PageRequest pageRequest);
+
 }

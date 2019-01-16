@@ -54,6 +54,13 @@
 			<version>1.1.10</version>
 		</dependency>
 
+		<!--fe分页插件-->
+		<dependency>
+			<groupId>com.github.pagehelper</groupId>
+			<artifactId>pagehelper-spring-boot-starter</artifactId>
+			<version>1.2.5</version>
+		</dependency>
+
 		<!--swagger -->
 		<dependency>
 			<groupId>io.springfox</groupId>

@@ -1,14 +1,12 @@
 package com.alvinlkk.portal.admin.controller;
 
+import com.alvinlkk.portal.admin.page.PageRequest;
 import com.alvinlkk.portal.admin.service.SysUserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author alvinkk
@@ -31,5 +29,10 @@ public class SysUserController {
     @GetMapping(value="/findAll")
     public Object findAll() {
         return sysUserService.findAll();
+    }
+
+    @PostMapping(value="/findPage")
+    public Object findPage(@RequestBody PageRequest pageQuery) {
+        return sysUserService.findPage(pageQuery);
     }
 }
